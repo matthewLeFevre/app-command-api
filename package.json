@@ -5,8 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@app-command/auth-sdk": "^0.1.0",
     "@app-command/types": "^0.1.0",
-    "@auth-command/auth-command-sdk": "C:/Users/matth/Documents/GitHub/auth-command-sdk",
     "@everlast-brands/error-handling": "^0.1.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",

@@ -1,16 +1,16 @@
 import express from "express";
-import ExampleRouter from "./routes/user";
 import cors from "cors";
-import AuthCommandSDK from "@auth-command/auth-command-sdk";
+
 import Rectify from "rectifyjs";
 import UserService from "./services/userService";
 import UserRouter from "./routes/user";
+import AuthCommandSDK from "@app-command/auth-sdk";
 
 export default function createServer(DB: Rectify) {
   const auth = new AuthCommandSDK({
-    path: <string>process.env.AUTH_CMD_ENV,
+    enviornment: <string>process.env.AUTH_CMD_ENV,
     appAPIKey: <string>process.env.ADMIN_APP_KEY,
-    appID: <string>process.env.ADMIN_APP_ID,
+    appId: <string>process.env.ADMIN_APP_ID,
   });
 
   const app = express();
