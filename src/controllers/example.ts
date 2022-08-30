@@ -1,6 +1,4 @@
 import { Request, Response } from "express";
-import fs from "fs";
-import readline from "readline";
 import { send } from "@everlast-brands/error-handling";
 
 export const exampleControllerMethod = (req: Request, res: Response) => {

@@ -8,7 +8,7 @@ dotenv.config();
     db: <string>process.env.RETHINK_DB_NAME,
     host: <string>process.env.RETHINK_DB_HOST,
     port: parseInt(<string>process.env.RETHINK_DB_PORT),
-    tableNames: ["users"],
+    tableNames: ["users", "projects"],
   });
 
   createServer(TEST_DB).listen(process.env.PORT, () => {
